@@ -5,19 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Kota extends Model
+class Tps extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nama', 'provinsi_id'];
+    protected $fillable = ['nama_tps', 'provinsi_id', 'kota_id'];
 
     public function provinsi()
     {
         return $this->belongsTo(Provinsi::class);
     }
 
-    public function tps()
+    public function kota()
     {
-        return $this->hasMany(TPS::class);
+        return $this->belongsTo(Kota::class);
     }
 }

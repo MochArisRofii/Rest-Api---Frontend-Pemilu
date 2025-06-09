@@ -5,14 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Provinsi extends Model
+class Dpt extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nama_provinsi'];
+    protected $fillable = ['nama', 'nik', 'alamat', 'jenis_kelamin', 'tps_id', 'is_banned'];
 
     public function tps()
     {
-        return $this->hasMany(TPS::class);
+        return $this->belongsTo(Tps::class);
     }
 }
