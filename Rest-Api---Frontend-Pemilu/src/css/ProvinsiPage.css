@@ -1,0 +1,139 @@
+/* Container utama */
+.provinsi-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #003366;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #e60000;
+}
+
+/* Container isi */
+.provinsi-container1 {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.provinsi-header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.provinsi-header1 h2 {
+  color: #333;
+}
+
+.btn-add {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #0056b3;
+}
+
+/* Tabel */
+.provinsi-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.provinsi-table th,
+.provinsi-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.provinsi-table th {
+  background-color: #1900ff;
+}
+
+.btn-edit {
+  background-color: #ffc107;
+  color: #333;
+  padding: 6px 10px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .provinsi-header1 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar-menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .provinsi-container1 {
+    padding: 15px;
+  }
+}

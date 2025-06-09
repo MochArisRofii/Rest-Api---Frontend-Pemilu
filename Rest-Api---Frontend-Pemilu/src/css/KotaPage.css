@@ -1,0 +1,81 @@
+.kota-page {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+.kota-container1 {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.kota-header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.kota-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.kota-table th,
+.kota-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.kota-table th {
+  background-color: #0054fc;
+}
+
+.kota-table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
