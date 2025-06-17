@@ -71,7 +71,7 @@ Route::middleware(['auth:sanctum', 'isAdmin'])
         Route::post('/pemilihan-dpr', [PemilihanDPRController::class, 'store']);
 
         Route::get('/calon-dpr', [CalonDPRController::class, 'index']);
-    Route::post('/calon-dpr', [CalonDPRController::class, 'store']);
-    Route::put('/calon-dpr/{id}', [CalonDPRController::class, 'update']);
-    Route::delete('/calon-dpr/{id}', [CalonDPRController::class, 'destroy']);
+        Route::post('/calon-dpr', [CalonDPRController::class, 'store']);
+        Route::put('/calon-dpr/{id}', [CalonDPRController::class, 'update']);
+        Route::delete('/calon-dpr/{id}', [CalonDPRController::class, 'destroy']);
     });

@@ -9,7 +9,9 @@ class Dpt extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nama', 'nik', 'alamat', 'jenis_kelamin', 'tps_id', 'is_banned'];
+    protected $fillable = [
+        'nama', 'nik', 'alamat', 'jenis_kelamin', 'tps_id', 'is_banned'
+    ];
 
     public function tps()
     {

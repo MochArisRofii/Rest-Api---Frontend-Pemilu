@@ -60,5 +60,4 @@ class DptController extends Controller
         $dpt->update(['is_banned' => false]);
         return response()->json(['message' => 'Pemilih telah diunban']);
     }
-
 }
